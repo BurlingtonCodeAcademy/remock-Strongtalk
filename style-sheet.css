@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby One SC');
+@import url('https://fonts.googleapis.com/css?family=Coda');
+
+  #header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+    height: 60vh;
+    flex-direction: column;
+    margin: auto;
+    color: #AD9658;
+    font-size: 3vw;
+    font-family: 'Bowlby One SC', sans-serif;
+
+  }
+
+  #title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+
+  }
+
+  #linebox {
+    display: flex;
+    justify-content: center;
+    border-bottom: double black;
+    width: 64.3vw;
+
+  }
+
+  #linebox1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: double black;
+    width: 64vw;
+
+  }
+
+  #hcap {
+    display: flex;
+    justify-content: center;
+
+    width: 15vw;
+    height: 20px;
+    
+    margin: auto;
+    padding-top: 50px;
+    
+    font-size: small
+    
+  }
+
+  .imgbox {
+    display: grid;
+    height: 45vh;
+    align-items: end;
+    justify-items: center;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 68% 15%;
+    
+    color:#AD9658;
+    column-gap: 4vw;
+
+    column-rule-width: 4px;
+    
+  }
+
+  #imgbox1 {
+    height: 20vh;
+    width: auto;
+    align-self: center;
+
+
+  }
+
+  #imgbox2 {
+    height: 20vh;
+    width: auto;
+   align-self: center;
+  }
+
+  #imgbox3 {
+    height: 20vh;
+    width: auto;
+    align-self: center;
+  }
+
+  .imgcap {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #homeanchor1 {         
+    display: flex;
+    justify-self: center;
+    grid-column-start: 2;
+    align-self: flex-start;
+    background-color: bisque;
+    font-size: 20px;
+  }
+
+  #features {
+    display: grid;
+    width: 100%;
+    height: 25vh;
+    margin-top: 10vh;
+  
+    background: rgb(191, 178, 148);
+    background: radial-gradient(circle, rgba(191, 178, 148, 0.8925945378151261) 0%, rgba(191, 181, 154, 1) 42%, rgba(173, 148, 114, 1) 100%);
+    justify-content: center;
+  }
+
+  #quote {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    
+    width: 35vw;
+    height: 15vh;
+  }
+
+  #main {
+    flex-wrap: wrap;
+    display: flex;
+    color: #6B5B59;
+    height: 120vh;
+    width: 65%;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: flex-start;
+  }
+
+  .mainwrapper {
+    display: flex;
+    height: 160vh;
+    justify-content: center;
+    flex-direction: row;
+    
+    font-family: 'Coda', sans-serif;
+
+  }
+
+  body {
+    margin: 0;
+  }
+#mainrcolumnslast {
+  display: flex;
+    height: 25vh;
+    width: 20vw;
+    
+    flex-direction: column;
+}
+  .mainrcolumns {
+   
+    display: flex;
+    height: 25vh;
+    width: 20vw;
+    
+    flex-direction: column;
+    border-bottom: 2.5px solid black;
+
+
+  }
+  .homebodyl {
+    display: flex;
+    height: 80;
+    width: 43vw;
+    margin-right: 10px;
+    
+    flex-direction: column;
+    border-bottom: 5px solid rgb(37, 34, 34);
+    
+  }
+  #homebodyl2 {
+    display: flex;
+    height: 100vh;
+    width: 43vw;
+    margin-right: 10px;
+    
+    flex-direction: column;
+    
+    
+  }
+
+  #date {
+    display: flex;
+    
+    width: 25%;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+
+
+  }
+
+  #homecolumnanchor {
+    display: flex;
+    padding-top: 10px;
+    
+
+  }
+
+  #homecolumn-para {
+    display: flex;
+    height: 20vh;
+    
+    padding-bottom: 10px;
+    flex-direction: row;
+
+  }
+  #body-image {
+    display: flex;
+    height: 44vh;
+    width: auto;
+    
+  }
+  #body-image2 {
+    display: flex; 
+    height: 40vh;
+    width: auto;
+  }
+  
+  #cont-anchor {
+    display: flex;
+    height: 6vh;
+    width: 10vw;
+    background-color: #FAB2A7;
+    align-items: center
+  }
+  #imagecolumnr {
+      display: flex;
+      width: auto;
+      height: 12vh;
+      float: left;
+      
+  }
+  #imagecolumnr2 {
+    display: flex;
+      width: auto;
+      height: 12vh;
+      float: left;
+  }
+  #homebodyr {
+    display: flex;
+    height: 25vh;
+    width: 20vw;
+    flex-direction: column;
+  }
+
+  .footerwrapper {
+     display: flex;
+     height: 40vh;
+     width: 100vw;
+     justify-content: center;
+     font-family: "Coda", sans-serif;
+     background-color: gray;
+     
+  }
+  .footer {
+    display: flex;
+    height: 40vh;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .footer-title {
+    display: flex;
+    width: 50vw;
+    height: 8vh;
+    justify-content: center;
+  }
+  .footer-left {
+    display: flex;
+    height: 30vh;
+    width: 50%;
+    
+  }
+  .footer-right {
+    display: flex; 
+    height: 30vh; 
+    width: 50%;
+    flex-direction: column;
+    
+  }
+  .footer-bottom-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+
+  }
+  .footer-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .data-box {
+    width: 65%;
+  }
+  
+.data-info-wrap {
+  display: flex;
+  padding-bottom: 10px;
+}
+.submit {
+  height: 5vh;
+  width: 45%;
+  background-color: #FAEFBB;
+  color: #6B5B59;
+  margin-top: 20px;
+}
+.icon-wrap {
+  height: 20vh;
+  width: 100%;
+display: flex;
+margin-top: 20px;
+
+}
+.icons-left {
+  display: flex;
+  height: 100%;
+  width: 65%;
+  margin-right: 25px;
+  flex-direction: column;
+  font-size: 12px;
+  justify-content: space-evenly;
+}
+.icons-right {
+  display: flex;
+  height: 100%;
+  width: 50%;
+
+flex-direction: column;
+font-size: 12px;
+justify-content: space-evenly;
+}
+
+.icons {
+  height: 2.2vh;
+  width: 2vw;
+  
+
+}
+.icon-wrapper {
+  display: flex;
+
+}
+#footer-para {
+  font-size: 14px;
+}
+
+
+  /* ---------------this is the Continued-reading CSS---------------- */
+  #cont-page-wrap {
+    display: flex;
+    width: 100%;
+    height: 250vh;
+    margin: 0 auto;
+    
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  
+  
+  #main-cont {
+    display: flex;
+    
+    width: 65vw;
+    font-family: 'Coda', sans-serif;
+    color: #6B5B59;
+    
+    
+
+  }
+  
+
+  #header-cont {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    height: 40vh;
+    width: 65vw; 
+    font-family: 'Bowlby One SC', sans-serif;
+    color: #AD9658;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+
+  }
+  #linebox-cont {
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px double black;
+    width: 65vw;
+
+   
+   
+
+  }
+
+  #hcap-cont {
+    display: flex;
+   font-size: 15px;
+    height: 5vh;
+    align-self: center;
+
+   
+  }
+  #cont-bodyl {
+    display: flex;
+    margin-right: 20px;
+    
+    width: 40vw;
+    flex-direction: column;
+  }
+  #cont-body-image {
+    display: flex;
+    height: auto;
+    
+    width: 25vw;
+    
+  }
+  #cont-bodyr {
+    display: flex;
+    height: 180vh;
+    width: 28vw;
+    
+    flex-direction: column;
+  }
+  .para-bot {
+    border-bottom: 2.5px solid black;
+  }
+  #para-bottom {
+    border-bottom: 5px double black;
+  }
+
+  .cont-pupphoto {
+    float: left;
+    height: 10vh;
+    width: auto;
+    padding: 5px;
+  }
+.cont-anchor-learn {
+  background-color: #FAB2A7;
+  height: 6vh;
+  width: 8vw;
+  align-content: center;
+}
+#linebox-cont-bottom {
+  border-bottom: 2.5px solid black;
+}
+
+
+/*-----------------------------------------THIS IS THE LEARN MORE CSS-----------------------------------------------------------------*/
+
+#learn-page-wrap {
+  display: flex;
+  width: 100%;
+    height: 250vh;
+    margin: 0 auto;
+    
+    flex-direction: column;
+    align-items: center;
+}
+#main-learn {
+  display: flex;
+    height: 200vh;
+    width: 65vw;
+    font-family: 'Coda', sans-serif;
+}
+#header-learn {
+  display: flex;
+    font-family: 'Bowlby One SC', sans-serif;
+    justify-content: center;
+    height: 40vh;
+    width: 65vw; 
+    color: #AD9658;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    font-size: 24px;
+}
+
+#hcap-learn {
+  display: flex;
+    font-size: 15px;
+    height: 5vh;
+    align-self: center;
+}
+
+#linebox-learn {
+  display: flex;
+    justify-content: center;
+    border-bottom: 10px double black;
+    width: 65vw;
+}
+
+#learn-bodyl {
+  display: flex;
+  height: 180vh;
+  width: 28vw;
+  margin-right: 20px;
+  
+  flex-direction: column;
+}
+#learn-pup-image {
+  display: flex;
+  height: auto;
+  width: 100%;
+  
+}
+
+#learn-bodyr {
+  display: flex;
+    height: 180vh;
+    
+    width: 40vw;
+    flex-direction: column;
+}
+#para-bot-learn {
+  padding-inline-end: 20px;
+  border-bottom: 5px double black; 
+}
+
+#learn-body-image {                        /* why wont this image shrink?? */
+  display: flex;
+ width: 400px;
+ 
+}
+
+/*---------------------------- This is the Blog-post CSS ----------------------*/
+
+#blog-page-wrap {
+  display: flex;
+  width: 100%;
+    height: 200vh;
+    margin: 0 auto;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-blog {
+  display: flex;
+    color: #AD9658;
+    justify-content: center;
+    height: 40vh;
+    width: 65vw; 
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Bowlby One SC', sans-serif;
+    font-size: 30px;
+}
+#hcap-blog {
+  display: flex;
+  font-size: 12px;
+  height: 5vh;
+  align-self: center;
+}
+
+#linebox-blog {
+  display: flex;
+    justify-content: center;
+    border-bottom: 10px double black;
+    width: 65vw;
+}
+#main-blog {
+  display: flex;
+    height: 110vh;
+    width: 65vw;
+    color: #6B5B59;
+    font-family: 'Coda', sans-serif;
+    flex-direction: column;
+}
+#blog-image {
+  display: flex;
+  height: auto;
+  width: 65vw;
+
+}
+ a:hover {
+  background-color: white;
+}
