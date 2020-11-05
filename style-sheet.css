@@ -1,6 +1,14 @@
+/* Imported fonts */
 @import url('https://fonts.googleapis.com/css?family=Bowlby One SC');
 @import url('https://fonts.googleapis.com/css?family=Coda');
 
+ /* general margin on all website pages */
+ body {
+  margin: 0;
+  background-color: #FBDCB8;
+}
+
+/*/*------ This is the Home page section of the CSS---------*/
   #header {
     display: flex;
     justify-content: center;
@@ -15,6 +23,7 @@
 
   }
 
+/* This is the mini title for the homepage */
   #title {
     display: flex;
     justify-content: center;
@@ -23,6 +32,7 @@
 
   }
 
+/* these are just double lines to add seperation  */
   #linebox {
     display: flex;
     justify-content: center;
@@ -39,64 +49,45 @@
 
   }
 
+  /* This is the header caption for homepage */
   #hcap {
     display: flex;
     justify-content: center;
-
     width: 15vw;
     height: 20px;
-    
     margin: auto;
     padding-top: 50px;
-    
     font-size: small
     
   }
 
+/* First three images done in a grid on the homepage */
   .imgbox {
     display: grid;
     height: 45vh;
     align-items: end;
     justify-items: center;
-    
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 68% 15%;
-    
     color:#AD9658;
     column-gap: 4vw;
-
-    column-rule-width: 4px;
-    
+    column-rule-width: 4px; 
   }
 
-  #imgbox1 {
-    height: 20vh;
-    width: auto;
-    align-self: center;
-
-
-  }
-
-  #imgbox2 {
-    height: 20vh;
-    width: auto;
-   align-self: center;
-  }
-
-  #imgbox3 {
+/* manipulation on each image in grid above */
+  .imgbox1 {
     height: 20vh;
     width: auto;
     align-self: center;
   }
-
+/* captions under each image */
   .imgcap {
     display: flex;
-    
     justify-content: center;
     align-items: center;
-
   }
 
+  /* Homepage anchor under images */
   #homeanchor1 {         
     display: flex;
     justify-self: center;
@@ -105,27 +96,33 @@
     background-color: bisque;
     font-size: 20px;
   }
-
+/* Really big banner across the screen */
   #features {
-    display: grid;
-    width: 100%;
+    display: flex;
+    width: 99vw;
     height: 25vh;
     margin-top: 10vh;
-  
-    background: rgb(191, 178, 148);
-    background: radial-gradient(circle, rgba(191, 178, 148, 0.8925945378151261) 0%, rgba(191, 181, 154, 1) 42%, rgba(173, 148, 114, 1) 100%);
+    background: rgb(80, 155, 108);
+    background: radial-gradient(circle, rgba(73, 126, 86, 0.893) 0%, rgb(90, 133, 96) 42%, rgb(106, 179, 106) 100%);
     justify-content: center;
+    
   }
 
+  /* Quote on that big banner */
   #quote {
     display: flex;
     align-self: center;
     justify-content: center;
-    
+    align-items: center;  
     width: 35vw;
     height: 15vh;
+    font-family: "Coda", sans-serif;
+    font-size: 20px;
+    color: black
   }
 
+/* The main guts of the homepage */
+/* This is the main container */
   #main {
     flex-wrap: wrap;
     display: flex;
@@ -137,103 +134,105 @@
     justify-content: flex-start;
   }
 
+/* main page wrapper */
   .mainwrapper {
     display: flex;
     height: 160vh;
     justify-content: center;
     flex-direction: row;
-    
     font-family: 'Coda', sans-serif;
-
   }
 
-  body {
-    margin: 0;
-  }
-#mainrcolumnslast {
-  display: flex;
-    height: 25vh;
-    width: 20vw;
-    
-    flex-direction: column;
-}
+/* Right side of the main contents on Homepage */
   .mainrcolumns {
-   
     display: flex;
     height: 25vh;
     width: 20vw;
-    
     flex-direction: column;
     border-bottom: 2.5px solid black;
-
-
   }
+ 
+/* Top Left side of the main contents on Homepage */
   .homebodyl {
     display: flex;
     height: 80;
     width: 43vw;
     margin-right: 10px;
-    
     flex-direction: column;
     border-bottom: 5px solid rgb(37, 34, 34);
-    
   }
+
+  /* Bottom left side of the main contents on Homepage */
   #homebodyl2 {
     display: flex;
     height: 100vh;
     width: 43vw;
     margin-right: 10px;
-    
     flex-direction: column;
-    
-    
   }
 
-  #date {
-    display: flex;
-    
-    width: 25%;
-    flex-direction: row;
-    justify-content: flex-start;
-    
+/* right side column */
+#homebodyr {
+  display: flex;
+  height: 25vh;
+  width: 20vw;
+  flex-direction: column;
+}
 
+/* This is the top date on the right side column */
+#date {
+  display: flex; 
+  width: 25%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 
-  }
-
+  /*Anchors to other pages, located inside right columns */
   #homecolumnanchor {
     display: flex;
     padding-top: 10px;
-    
-
   }
 
+  /* Para text inside the right side columns */
   #homecolumn-para {
     display: flex;
     height: 20vh;
-    
-    padding-bottom: 10px;
     flex-direction: row;
-
   }
+
+  /* Images in the left side columns */
   #body-image {
     display: flex;
-    height: 44vh;
-    width: auto;
-    
+    height: 40vh;
+    width: 30vw;
   }
+
   #body-image2 {
     display: flex; 
-    height: 40vh;
-    width: auto;
+    height: 36vh;
+    width: 30vw;
   }
-  
+
+/* This is the last column on the right at the bottom of the main body, before the footer */
+#mainrcolumnslast {
+  display: flex;
+    height: 25vh;
+    width: 20vw;
+    flex-direction: column;
+}
+  /* Salmon colored buttons */
   #cont-anchor {
     display: flex;
     height: 6vh;
     width: 10vw;
-    background-color: #FAB2A7;
-    align-items: center
+    background-color: #a7fab9;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
   }
+
+  /* images in the right side column */
   #imagecolumnr {
       display: flex;
       width: auto;
@@ -247,69 +246,75 @@
       height: 12vh;
       float: left;
   }
-  #homebodyr {
-    display: flex;
-    height: 25vh;
-    width: 20vw;
-    flex-direction: column;
-  }
-
+ 
+/*/* ------------------------------FOOTER------------------------------- */ 
   .footerwrapper {
      display: flex;
      height: 40vh;
-     width: 100vw;
+     width: 99vw;
      justify-content: center;
      font-family: "Coda", sans-serif;
-     background-color: gray;
-     
+     background-color: rgb(103, 176, 194);  
   }
+
+/* Footer container  */
   .footer {
     display: flex;
     height: 40vh;
     width: 50vw;
     flex-direction: column;
     justify-content: center;
-
   }
+
+  /* Main footer title  */
   .footer-title {
     display: flex;
     width: 50vw;
     height: 8vh;
     justify-content: center;
   }
+
+  /* Left side column in footer  */
   .footer-left {
     display: flex;
     height: 30vh;
     width: 50%;
     
   }
+
+  /* Right side column in footer */
   .footer-right {
     display: flex; 
     height: 30vh; 
     width: 50%;
     flex-direction: column;
-    
   }
+
+  /* This is the bottom wrap */
   .footer-bottom-wrap {
     display: flex;
     flex-direction: row;
     width: 50vw;
-
   }
+  /* This is the container for user inputs*/
   .footer-info {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
   
+  /* This is for name input and email input*/
   .data-box {
     width: 65%;
   }
   
+  /* This wraps the user inputs*/
 .data-info-wrap {
   display: flex;
   padding-bottom: 10px;
 }
+
+/* Submit box*/
 .submit {
   height: 5vh;
   width: 45%;
@@ -317,13 +322,16 @@
   color: #6B5B59;
   margin-top: 20px;
 }
+
+/* This wraps the icons */
 .icon-wrap {
   height: 20vh;
   width: 100%;
 display: flex;
 margin-top: 20px;
-
 }
+
+/* Icons left side column*/
 .icons-left {
   display: flex;
   height: 100%;
@@ -333,57 +341,54 @@ margin-top: 20px;
   font-size: 12px;
   justify-content: space-evenly;
 }
+
+/* Icons right side column*/
 .icons-right {
   display: flex;
   height: 100%;
   width: 50%;
-
-flex-direction: column;
-font-size: 12px;
-justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 12px;
+  justify-content: space-evenly;
 }
 
+/*template for each icon */
 .icons {
   height: 2.2vh;
   width: 2vw;
-  
-
 }
+
+/* THis wraps the text with the icon*/
 .icon-wrapper {
   display: flex;
-
 }
+
+/* Text size*/
 #footer-para {
   font-size: 14px;
 }
 
 
   /* ---------------this is the Continued-reading CSS---------------- */
+  /*Wraps the whole page*/
   #cont-page-wrap {
     display: flex;
     width: 100%;
     height: 250vh;
     margin: 0 auto;
-    
     flex-direction: column;
     align-items: center;
   }
   
-  
-  
-  
+  /* Main */
   #main-cont {
     display: flex;
-    
     width: 65vw;
     font-family: 'Coda', sans-serif;
     color: #6B5B59;
-    
-    
-
   }
   
-
+/*Header container*/
   #header-cont {
     display: flex;
     font-size: 24px;
@@ -395,89 +400,104 @@ justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-
+    text-decoration: none;
   }
+
+  /*This is the line of seperation under header*/
   #linebox-cont {
     display: flex;
     justify-content: center;
     border-bottom: 10px double black;
     width: 65vw;
-
-   
-   
-
   }
 
+  /*Caption on the header*/
   #hcap-cont {
     display: flex;
    font-size: 15px;
     height: 5vh;
     align-self: center;
-
-   
   }
+
+/* left side column of main content*/
   #cont-bodyl {
     display: flex;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
     width: 40vw;
     flex-direction: column;
   }
+
+  /* Giant photo on the left side*/
   #cont-body-image {
     display: flex;
     height: auto;
-    
-    width: 25vw;
-    
+    width: 25vw; 
   }
+
+/*Right side column of main content*/
   #cont-bodyr {
     display: flex;
     height: 180vh;
     width: 28vw;
-    
     flex-direction: column;
   }
+
+/* Right side lines of seperation between column blocks*/
   .para-bot {
     border-bottom: 2.5px solid black;
   }
+
   #para-bottom {
     border-bottom: 5px double black;
   }
+/* Last line at the bottom of the right side*/
+  #linebox-cont-bottom {
+    border-bottom: 2.5px solid black;
+  }
 
+ /* Photos bottom right hand side column*/ 
   .cont-pupphoto {
     float: left;
     height: 10vh;
     width: auto;
     padding: 5px;
   }
+
+ /* buttons with nested links*/ 
 .cont-anchor-learn {
-  background-color: #FAB2A7;
+  display: flex;
+  background-color: #a7fab9;
+  color: black;
   height: 6vh;
   width: 8vw;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
-#linebox-cont-bottom {
-  border-bottom: 2.5px solid black;
-}
+
+
 
 
 /*-----------------------------------------THIS IS THE LEARN MORE CSS-----------------------------------------------------------------*/
 
+/* Page wrapper*/
 #learn-page-wrap {
   display: flex;
   width: 100%;
-    height: 250vh;
-    margin: 0 auto;
-    
+    height: 200vh;
+    margin: auto;
     flex-direction: column;
     align-items: center;
 }
+
+/*Container for the whole page */
 #main-learn {
   display: flex;
     height: 200vh;
     width: 65vw;
     font-family: 'Coda', sans-serif;
 }
+
+/* Container for the header*/
 #header-learn {
   display: flex;
     font-family: 'Bowlby One SC', sans-serif;
@@ -491,6 +511,7 @@ justify-content: space-evenly;
     font-size: 24px;
 }
 
+/* Caption for the header*/
 #hcap-learn {
   display: flex;
     font-size: 15px;
@@ -498,6 +519,7 @@ justify-content: space-evenly;
     align-self: center;
 }
 
+/* Line of seperation in the header*/
 #linebox-learn {
   display: flex;
     justify-content: center;
@@ -505,64 +527,68 @@ justify-content: space-evenly;
     width: 65vw;
 }
 
+/* Left side column body */
 #learn-bodyl {
   display: flex;
-  height: 180vh;
+  height: 150vh;
   width: 28vw;
   margin-right: 20px;
-  
   flex-direction: column;
 }
+
+/*Image on the right side column*/
 #learn-pup-image {
   display: flex;
   height: auto;
   width: 100%;
-  
 }
 
+/* Right side column body*/
 #learn-bodyr {
   display: flex;
-    height: 180vh;
-    
+    height: 160vh;
     width: 40vw;
     flex-direction: column;
 }
+
+/* Paragraphs in the columns*/
 #para-bot-learn {
   padding-inline-end: 20px;
   border-bottom: 5px double black; 
 }
 
-#learn-body-image {                        /* why wont this image shrink?? */
+/* Actually not sure what this goes to... didnt want to delete*/
+#learn-body-image {                        
   display: flex;
  width: 400px;
- 
 }
 
 /*---------------------------- This is the Blog-post CSS ----------------------*/
-
+/* Wraps the blog page*/
 #blog-page-wrap {
   display: flex;
   width: 100%;
     height: 200vh;
     margin: 0 auto;
-    
     flex-direction: column;
     align-items: center;
 }
 
+/* Header container */
 #header-blog {
   display: flex;
     color: #AD9658;
     justify-content: center;
     height: 40vh;
     width: 65vw; 
-    
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     font-family: 'Bowlby One SC', sans-serif;
     font-size: 30px;
 }
+
+/* Caption in the header*/
 #hcap-blog {
   display: flex;
   font-size: 12px;
@@ -570,12 +596,14 @@ justify-content: space-evenly;
   align-self: center;
 }
 
+/* Line of seperation between header and body*/
 #linebox-blog {
   display: flex;
     justify-content: center;
     border-bottom: 10px double black;
     width: 65vw;
 }
+/* Main body container*/
 #main-blog {
   display: flex;
     height: 110vh;
@@ -584,12 +612,12 @@ justify-content: space-evenly;
     font-family: 'Coda', sans-serif;
     flex-direction: column;
 }
+/*HUGE image in the body*/
 #blog-image {
   display: flex;
-  height: auto;
-  width: 65vw;
+  height: 100vh;
+  width: auto;
 
 }
- a:hover {
-  background-color: white;
-}
+
+
